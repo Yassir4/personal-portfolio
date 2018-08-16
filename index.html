@@ -11,17 +11,17 @@
     <!-- Showcase -->
     <header id="showcase" class="grid">
         <div class="icons">
-            <a href="https://twitter.com/hartaniyassir"><i class="fa fa-twitter" style="font-size:20px"></i></a> 
-            <a href="https://www.linkedin.com/in/yassir-hartani-a8a131137/"><i class="fa fa-linkedin" style="font-size:20px"></i></a> 
-            <a href="https://github.com/Yassir4"><i class="fa fa-github-alt" style="font-size:20px"></i></a> 
+            <a href="https://twitter.com/hartaniyassir"><i class="fa fa-twitter" style="font-size:20px"></i></a>
+            <a href="https://www.linkedin.com/in/yassir-hartani-a8a131137/"><i class="fa fa-linkedin" style="font-size:20px"></i></a>
+            <a href="https://github.com/Yassir4"><i class="fa fa-github-alt" style="font-size:20px"></i></a>
         </div>
         <label onclick="" for="toggle">&#9776;</label>
         <input type="checkbox" name="toggle" id="toggle" />
-        <div class="menu" id="menu" >
+        <div class="menu" id="menu">
             <a href="#about">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </header>
     <!-- About -->
@@ -33,23 +33,69 @@
             <p class="greeting">Hello my name is</p>
             <p class="name"> <b> Hartani Yassir </b></p>
             <p class="description">
-                I'm a full-stack developer from Morocco. Working remotly, specialised in frontend and backend development
-                If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
-                bla bla bla bla bla bla bla bla bla
+                I'm a full-stack developer from Morocco. Working remotly, specialised in frontend and backend development If you are a business
+                seeking a web presence or an employer looking to hire, you can get in touch with me here. bla bla bla bla
+                bla bla bla bla bla
             </p>
         </div>
     </section>
     <!-- Skills -->
+    <section id="skills" class="grid">
+        <div class="content-wrap">
+            <h2>Skills Overview</h2>
+            <p>I started learning web development about 2 years ago and I felt love with it, just
+            </p>
+            <br>
+            <div class="card1">
+                <div class="bg-img">
+                    <img src="img/frontend-icon.svg" alt="">
+                </div>
+                <h3 class="skill-name">Frontend</h3>
+                <ul class="technologies">
+                    <li>Redux/Angular</li>
+                    <li>Javascript</li>
+                    <li>node.js</li>
+                    <li>Gulp</li>
+                    <li>HTML/CSS/SASS</li>
+                </ul>
+            </div>
+            <br>
+            <div class="card2">
+                <div class="bg-img">
+                    <img src="img/backend-icon.svg" alt="">
+                </div>
+                <h3 class="skill-name">Backend</h3>
+                <ul class="technologies">
+                    <li>Ruby on Rails</li>
+                    <li>MongoDB</li>
+                    <li>express.js</li>
+                    <li>bla bla</li>
+                    <li>bla bla</li>
+                </ul>
+            </div>
+            <br>
+            <div class="card3">
+                <div class="bg-img">
+                    <img src="img/other-skills-icon.svg" alt="">
+                </div>
+                <h3 class="skill-name">Others</h3>
+                <ul class="technologies">
+                    <li>Git</li>
+                    <li>Unit testing</li>
+                    <li>bla bla</li>
+                    <li>bla bla</li>
+                    <li>bla bla</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="grid">
+        <div class="content-wrap">
+            
+        </div>
+    </section>
 </body>
 
-<script>
-    function showMenu() {
-        var x = document.getElementById("menu");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-</script>
+
 </html>
