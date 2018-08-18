@@ -15,7 +15,12 @@
             <a href="https://www.linkedin.com/in/yassir-hartani-a8a131137/"><i class="fa fa-linkedin" style="font-size:20px"></i></a>
             <a href="https://github.com/Yassir4"><i class="fa fa-github-alt" style="font-size:20px"></i></a>
         </div>
-        <label onclick="" for="toggle">&#9776;</label>
+
+        <label for="toggle" class="menu-toggle">
+            <i></i>
+        </label>
+
+        <!-- <label onclick="" for="toggle">&#9776;</label> -->
         <input type="checkbox" name="toggle" id="toggle" />
         <div class="menu" id="menu">
             <a href="#about">About</a>
@@ -34,9 +39,9 @@
             <p class="greeting">Hello my name is</p>
             <p class="name"> <b> Hartani Yassir </b></p>
             <p class="description">
-                I'm a full-stack developer from Morocco. Working remotly, specialised in frontend and backend development If you are a business
-                seeking a web presence or an employer looking to hire, you can get in touch with me here. bla bla bla bla
-                bla bla bla bla bla
+                I'm a Front end developer developer from Morocco. Working remotly, specialised in frontend development If you
+                are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
+                bla bla bla bla bla bla bla bla bla
             </p>
         </div>
     </section>
@@ -44,7 +49,8 @@
     <section id="skills" class="grid">
         <div class="content-wrap">
             <h2>Skills Overview</h2>
-            <p>I started learning web development about 2 years ago and I felt love with it, just
+            <p>I started learning web development about 2 years ago and I felt love with it, 
+                    Below is a quick overview of my main technical skill sets and tools I use
             </p>
             <br>
             <div class="card1">
@@ -138,11 +144,11 @@
             <div class="project1">
                 <div class="project-img">
                     <img src="img/project2.png" alt="">
-                    <a  href="https://github.com/Yassir4/mp3ToYoutube" class="overlay">
-                        <div  class="text">
+                    <a href="https://github.com/Yassir4/mp3ToYoutube" class="overlay">
+                        <div class="text">
                             <b id="title">Mp3 To Youtube Gem</b>
                             <p>
-                                This gem convert mp3 files into Videos and push it in youtube 
+                                This gem convert mp3 files into Videos and push it in youtube
                             </p>
                         </div>
                     </a>
@@ -156,14 +162,87 @@
                     </div>
                 </div>
             </div>
+            <br>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="grid">
+        <div class="content-wrap">
+            <div class="contact-header">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-form-widget">
+                <div class="form">
+                    <form name="contact-form">
+                        <div class="nama">
+                            <br />
+                            <br />
+                            <i class="fa fa-user"></i> Name:</div>
+                        <input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" value="" />
+                        <br />
+                        <br />
+                        <div class="email">
+                            <i class="fa fa-envelope-o"></i> E-mail:</div>
+                        <input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" value="" />
+                        <br />
+                        <br />
+                        <div class="pesan">
+                            <i class="fa fa-pencil-square-o"></i> Message:</div>
+                        <textarea class="contact-form-email-message" cols="30" id="ContactForm1_contact-form-email-message" name="email-message"
+                            rows="10"></textarea>
+                        <br />
+                        <input class="contact-form-button contact-form-button-submit fa-user" id="ContactForm1_contact-form-submit" type="button"
+                            value="Send">
+                        <br />
+                        <div class="contact-form-error-message" id="ContactForm1_contact-form-error-message">
+                        </div>
+                        <div class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <br>
-    <!-- Contact -->
-    <section id="contact" class="grid">
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+        <small>Personal Portfolio
+        Project By
+            <a href="https://www.linkedin.com/in/yassir-hartani-a8a131137/" target="_blank">Hartani yassir</a>
+        
+        Inspired By 
+            <a href="https://themes.3rdwavemedia.com/instance/bs4/index.html"target="_blank">3rd wave media</a>
+        </small>
+    </footer>
 
-    </section>
 </body>
 
+<script>
+    // contact form 
+    function loadCSS(e, t, n) {
+        "use strict";
+        var i = window.document.createElement("link");
+        var o = t || window.document.getElementsByTagName("script")[0];
+        i.rel = "stylesheet";
+        i.href = e;
+        i.media = "only x";
+        o.parentNode.insertBefore(i, o);
+        setTimeout(function () {
+            i.media = n || "all"
+        })
+    }
+    loadCSS("https://fonts.googleapis.com/css?family=Roboto:400,400italic,700");
+    loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+    loadCSS("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+    //nav menu (mobile)
+    document.addEventListener("DOMContentLoaded", function () {
+        var el = document.querySelector('.menu-toggle');
+        el.onclick = function () {
+            el.classList.toggle("open");
+        }
+    });
+
+</script>
 
 </html>
