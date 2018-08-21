@@ -152,6 +152,10 @@ section#about{
 #skills.content-wrap{
     margin-bottom: 20px;
 }
+#skills.content-wrap p{
+    margin-left: 13%;
+    margin-right: 13%;
+}
 .personal-img img{
     border-radius: .25rem !important;
     max-width: 240px;
@@ -168,6 +172,7 @@ section#about{
 .name{
     margin: 0 0 14px 0;
     font-size: 40px;
+    line-height: 45px;
 }
 .description{
     font-family: 'Roboto', sans-serif;
@@ -222,6 +227,7 @@ ul.technologies{
 ul li:before {
     content: '✓';
     color: #41A4F5;
+    margin-right: 2%;
 }
 
 /* Client Section */
@@ -293,7 +299,8 @@ ul li:before {
   .text {
     /* grid-column: 2/3; */
     color: white;
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5;
     position: absolute;
@@ -595,9 +602,14 @@ ul li:before {
         grid-template-columns: minmax(15px,1fr) minmax(285px,10fr) minmax(15px,1fr);
 
     }
+     /* project Section*/
+     .text {
+        font-size: 1rem;
+    }
+
     /* Contact Section */
     #contact .content-wrap{
-        grid-template-columns: minmax(15px,1fr) minmax(285px,10fr) minmax(15px,1fr);
+        grid-template-columns: minmax(15px,1fr) minmax(285px,3fr) minmax(15px,1fr);
     }
 
 }
@@ -658,6 +670,9 @@ ul li:before {
         grid-template-columns: repeat(6, 1fr);
      }
      /* projects */
+     .text {
+         font-size: 1rem;
+     }
      .projects{
         display: grid;
         grid-template-columns: repeat(2,minmax(285px,10fr));
@@ -666,6 +681,10 @@ ul li:before {
     .project2{
         grid-column: 2/3;
         grid-row: 1/2;
+    }
+    /* contact */
+    #contact .content-wrap {
+        grid-template-columns: minmax(15px,1fr) minmax(285px,2fr) minmax(15px,1fr);
     }
 
 }
