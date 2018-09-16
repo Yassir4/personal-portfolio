@@ -22,7 +22,7 @@ npm install
 npm i http-server
 ```
 
-####Building
+###Building
 ```
 gulp
 ```
