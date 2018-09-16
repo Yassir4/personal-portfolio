@@ -1,6 +1,6 @@
 # personal-portfolio
 http://personal-portfolia.firebaseapp.com/
-
+This was built in order for me to learn CSS GRID with Responsive Design
 ## Running Locally
 
 1- [Install git](https://www.git-scm.com/downloads)  
