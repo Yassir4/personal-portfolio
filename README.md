@@ -3,9 +3,9 @@ http://personal-portfolia.firebaseapp.com/
 
 ## Running Locally
 
-1- [Install git](https://www.git-scm.com/downloads)
-2- [Install node.js](https://nodejs.org/en/)
-3- Install gulp globally
+1- [Install git](https://www.git-scm.com/downloads)  
+2- [Install node.js](https://nodejs.org/en/)  
+3- Install gulp globally  
 ```
 npm install g gulp
 ```
